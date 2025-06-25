@@ -17,9 +17,9 @@ TABLE_NAME = f"airflow_lab_{NAME}"
 def get_snowflake_connection():
     # TODO 1: Specify Airflow variables. Import them here.
     return snowflake.connector.connect(
-        user=Variable.get("snowflake_user", default_var="MELANIEYES"),
-        password=Variable.get("snowflake_password", default_var="BuiCaoDongNghi@1"),
-        account=Variable.get("snowflake_account", default_var="TJZIEET-CR93617"),
+        user=Variable.get("snowflake_user", default_var="XXXXX"),
+        password=Variable.get("snowflake_password", default_var="XXXXX"),
+        account=Variable.get("snowflake_account", default_var="XXXXX"),
         database="DB_LAB_M1W4",
         schema="SC_LAB_M1W4_DEMO",
     )
